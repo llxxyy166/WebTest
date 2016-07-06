@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 175%;
+}
+
+div {
+	padding: 1%;
+}
+
+section {
+	border: 1.5px solid black;
+	background-color: gray;
+}
+
+p {
+	padding: 2%;
+}
+
+h2 {
+	position: relative;
+	margin: 0;
+	border: 1.5px solid black;
+	width: 40%;
+	left: 60%;
+	text-align: center;
+	font-size: 125%;
+}
+
+#sec-1 h2 {
+	background-color: pink;
+}
+
+#sec-2 h2 {
+	background-color: red;
+	color: white;
+}
+
+#sec-3 h2 {
+	background-color: yellow;
+}
+
+
+
+@media (min-width: 992px) {
+	.col-md-4 {
+		float: left;
+		width:33.33%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-sm-6 {
+		float: left;
+		width: 50%;
+	}
+
+	.col-sm-6#sec-3 {
+		clear: double;
+		width: 100%;
+	}
+} 
